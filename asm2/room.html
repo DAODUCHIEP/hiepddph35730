@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./room.css">
+</head>
+
+<body>
+    <div class="hearder ">
+        <div class="nav-bar">
+            <div class="logo">
+                <img src="./img/logo-dark.png" alt="" height="50px">
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="./index.html">TRANG CHỦ</a></li>
+                    <li><a href="">GIỚI THIỆU</a></li>
+                    <li><a href="./dichvu.html">DỊCH VỤ</a></li>
+                    <li><a href="">LIÊN HỆ</a></li>
+                </ul>
+            </div>
+            <a href="">
+                <div class="form-search">
+                    <a href="./room.html">
+                        <button>Đặt phòng</button>
+                    </a>
+                </div>
+            </a>
+
+        </div>
+        <div class="banner">
+            <div class="banner-tile">
+                <h1>ĐẶT PHÒNG</h1>
+            </div>
+            <img src="./img/full_1523849244_1440_0128e20285ab6e25df1b4d92a02b7fc9.jpg" alt="" height="300px">
+        </div>
+    </div>
+    <!-- -------end hearder-------------- -->
+    <div class="main-content container">
+        <div class="product-content">
+            <div class="content-tile">
+                <h1>THÔNG TIN ĐẶT PHÒNG</h1>
+            </div>
+
+            <div class="itemp-content">
+                
+                <input class="Thong-tin" type="text" id="hoTen" placeholder="Họ và tên">
+                <p class="thongBao"></p>
+                <input class="Thong-tin" type="text" id="chungMinhThu" placeholder="chứng minh thư">
+                <p class="thongBao"></p>
+                <input class="Thong-tin" type="text" id="email" placeholder="Email">
+                <p class="thongBao"></p>
+                <label for="Giới tính">Giới Tính:</label>
+                <input class="h" type="radio" id="gioiTinh" name="radio" value="nam" >nam
+                <input class="h" type="radio" id="gioiTinh"  name="radio" value="nữ">nữ
+                <p class="thongBao"></p>
+                <input class="Thong-tin" type="text" id="soDienThoai" placeholder="Số điện thoại">
+                <p class="thongBao"></p>
+                <select name="" class="loai-phong" id="loaiphong">
+                    <option value="0">---chọn phòng----</option>
+                    <option value="1">Phòng 1</option>
+                    <option value="2">Phòng 2</option>
+                    <option value="3">Phòng 3</option>
+                    <option value="4">Phòng 4</option>
+                </select>        
+                <p class="thongBao"></p> <br>
+                <label for="Ngày sinh">Ngày Sinh:</label>
+                <input class="ngaysinh" id="ngaysinh" type="date">
+                <p class="thongBao"></p> <br>
+                <input class="Thong-tin" type="text" id="hanhly" placeholder="hành lý">
+                <p class="thongBao"></p> <br>
+                <select name="" id="thanhToan" class="loai-phong">
+                    <option value="0">---chọn hình thức thanh toán---</option>
+                    <option value="ngân hàng">ngân hàng</option>
+                    <option value="quẹt thẻ">quẹt thẻ</option>
+                    <option value="Iền mặt">Iền mặt</option>
+                </select>
+                <p class="thongBao"></p>
+                <button class="Thong-tin" onclick="datPhong()">Đặt phòng</button> <br> <br>
+                <table id="bangkq" border="1">
+                </table>
+
+            </div>
+        </div>
+    </div>
+    <!-- --------------end main-content-------------- -->
+    <div class="footer container">
+        <div class="logo-footer">
+            <img src="./img/logo-dark.png" alt="">
+        </div>
+
+        <div class="footer-uudai">
+            <h5> ĐĂNG KÝ NHẬN NGAY ƯU ĐÃI</h5>
+            <form action="">
+                <input type="text" placeholder="Email" required=""> <br>
+                <button>Đăng Ký Ngay</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="./index.js"></script> 
+</body> 
+
+</html>
